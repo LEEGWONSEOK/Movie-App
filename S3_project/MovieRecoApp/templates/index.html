@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+
+{% block title %}main page{% endblock %}
+
+{% block content %}
+<h1>영화 제목을 입력해주세요</h1>
+<div class="mycontainer">
+  <form class="search" action = "/search" method="POST">
+    <input name="name" type=text class="form-control" id='name' style="margin-bottom:10px" placeholder="영화제목 검색"/>
+    <input type="submit" class="btn btn-primary btn-sm btn-block" value="검색" />
+  </form>
+</div>
+{% endblock %}
+
